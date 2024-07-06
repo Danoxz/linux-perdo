@@ -1,0 +1,13 @@
+
+# Раскладка
+setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
+
+# Разрешение экрана
+xrandr --output Virtual1 --mode 1920x1080
+
+# Обои
+feh --bg-scale ~/.wallpaper.jpg
+
+# Запуск WM
+dwmblocks & # (хз будет ли так работать или нет)
+exec dwm 2> $HOME/.dwm.log
